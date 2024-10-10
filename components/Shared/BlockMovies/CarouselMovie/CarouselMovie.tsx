@@ -12,7 +12,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ActionsButtons } from "./ActionsButtons";
 
 import { CarouselMovieProps } from "./CarouselMovie.types";
-import { dataMovies } from "@/app/(routes)/upload-movies/components/NormalMovie/NormalMovie.data";
 import { ChaptersInfo } from "./ChaptersInfo";
 import { FilmGenres } from "./FilmGenres";
 

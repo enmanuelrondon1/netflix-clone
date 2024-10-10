@@ -18,7 +18,6 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Trash } from "lucide-react";
-import { DialogDescription } from "@radix-ui/react-dialog";
 import { toast } from "@/hooks/use-toast";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -27,7 +26,7 @@ import { UserNetflix } from "@prisma/client";
 
 export const Profiles = (props: ProfilesProps) => {
   const { users } = props;
-  const {changeCurrentUser, currentUser} = useCurrentNetflixUser()
+  const {changeCurrentUser} = useCurrentNetflixUser()
 
   const [manageProfiles, setManageProfiles] = useState(false);
   const router = useRouter()

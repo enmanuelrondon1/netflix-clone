@@ -2,11 +2,9 @@ import Link from "next/link";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Terms } from "../components/Terms/Terms";
 import { LoginForm } from "./LoginForm/LoginForm";
-import { auth,  } from "@/auth";
 
 
 export default async function LoginPage() {
-  const session = await auth()
   return (
     <div>
       <p className="text-3xl font-bold text-left mb-7 ">Iniciar sesion</p>
